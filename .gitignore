@@ -1,9 +1,0 @@
-/data
-/eslint.config.mjs
-/fixtures
-/node_modules
-/package-lock.json
-/package.json
-/pages
-/playwright.config.ts
-/tests
