@@ -1,7 +1,5 @@
 # Projekt E2E - Rekrutacja
 
-Rozwiązanie zadania rekrutacyjnego polegającego na stworzeniu projektu testów automatycznych E2E dla aplikacji: [Angular QA Recruitment App](https://angular-qa-recruitment-app.netlify.app/).
-
 Projekt został oparty o **Playwright** z językiem **TypeScript** i zaprojektowany zgodnie z najlepszymi branżowymi praktykami tworzenia oprogramowania testowego (Page Object Model, Custom Fixtures, Data-Driven Testing, CI/CD).
 
 ## Wymagania
@@ -12,7 +10,7 @@ Projekt został oparty o **Playwright** z językiem **TypeScript** i zaprojektow
 ## Szybki start (Uruchomienie projektu)
 
 1. **Instalacja zależności:**
-   W głównym katalogu projektu (`e2e-tests`) uruchom:
+   W głównym katalogu projektu uruchom:
 
    ```bash
    npm install
