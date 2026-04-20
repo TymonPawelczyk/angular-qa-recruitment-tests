@@ -6,18 +6,17 @@ test.describe('Welcome Page', () => {
   });
 
   test('should change terminal command text when clicking Next Steps buttons', async ({
-    page,
     welcomePage,
   }) => {
-    await expect(page.getByText('ng generate component xyz')).toBeVisible();
+    await expect(welcomePage.terminalText).toContainText('ng generate component xyz');
 
     await welcomePage.angularMaterialButton.click();
-    await expect(page.getByText('ng add @angular/material')).toBeVisible();
+    await expect(welcomePage.terminalText).toContainText('ng add @angular/material');
 
     await welcomePage.addPwaSupportButton.click();
-    await expect(page.getByText('ng add @angular/pwa')).toBeVisible();
+    await expect(welcomePage.terminalText).toContainText('ng add @angular/pwa');
 
     await welcomePage.buildForProductionButton.click();
-    await expect(page.getByText('ng build')).toBeVisible();
+    await expect(welcomePage.terminalText).toContainText('ng build');
   });
 });
