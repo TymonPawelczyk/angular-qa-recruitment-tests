@@ -18,15 +18,9 @@ export default defineConfig({
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },
-    // Odkomentuj poniższe przeglądarki, jeśli chcesz testować w Firefoksie i WebKit (Safari).
-    // Na niektórych systemach Linux (np. Zorin OS) może wymagać to dodatkowych bibliotek systemowych.
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
+    {
+      name: 'firefox',
+      use: { ...devices['Desktop Firefox'] },
+    },
   ],
 });
